@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/content" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_bar" layout="@layout/include_top_bar"/>
+    <RelativeLayout android:background="#111111" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingBottom="50dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/footer_bar" android:background="@color/ip_color_primary" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@+id/ll_dir" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="#cfcfcf" android:ellipsize="end" android:id="@+id/tv_dir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ip_all_images" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginBottom="2dp" android:src="@mipmap/text_indicator" android:layout_toRightOf="@+id/tv_dir" android:layout_alignBottom="@+id/tv_dir"/>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn_preview" android:background="@null" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="预览(3)" android:layout_alignParentRight="true" android:textAllCaps="false"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topblank" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <RelativeLayout android:id="@+id/top_nav" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/backbtn" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:src="@mipmap/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="24sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/cname" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/textsizeset" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/textsizeset" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/cell" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cell" android:layout_toLeftOf="@+id/textsizeset" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout android:id="@+id/load_more_list_view_ptr_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+            <in.srain.cube.views.loadmore.LoadMoreListViewContainer android:id="@+id/load_more_list_view_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/load_more_small_image_list_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null"/>
+            </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </LinearLayout>
+    <View android:background="@color/bottomnavbg" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bottomnav" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/writepllayout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="4">
+            <ImageView android:gravity="center_vertical" android:id="@+id/writepl" android:background="@mipmap/shuoliangju" android:layout_width="match_parent" android:layout_height="32dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:contentDescription="@null"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/plimglayout" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <ImageView android:id="@+id/plimg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/nbpimg" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@null"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dingimglayout" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <ImageView android:gravity="center" android:id="@+id/dingimg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/dingimg2" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@null"/>
+            <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_ding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/caiimglayout" android:padding="5dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <ImageView android:gravity="center" android:id="@+id/caiimg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/caiimg2" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@null"/>
+            <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_cai" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/shareimglayout" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <ImageView android:gravity="center" android:id="@+id/shareimg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/shareimg" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/errorlayout" android:background="@color/color_indexbottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/errorimg" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</LinearLayout>

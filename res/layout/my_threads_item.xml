@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:paddingLeft="5dp" android:paddingTop="8dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/blankview" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="16dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_below="@+id/blankview">
+        <RelativeLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/threadleftview" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+            <TextView android:textSize="27sp" android:textColor="@color/black" android:id="@+id/today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="32sp" android:textColor="@color/black" android:id="@+id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/today"/>
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/month" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_toRightOf="@+id/day" android:layout_alignBaseline="@+id/day" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/news" android:background="@drawable/pcitem_bg" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/contentimg" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            <TextView android:textSize="16sp" android:textColor="#515151" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/message" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/contentimg" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

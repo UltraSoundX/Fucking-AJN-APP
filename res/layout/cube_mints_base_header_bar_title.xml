@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/cube_mints_main_color" android:layout_width="match_parent" android:layout_height="@dimen/cube_mints_header_height">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/ly_title_bar_left" android:paddingLeft="12dp" android:layout_width="100dp" android:layout_height="@dimen/cube_mints_header_height" android:layout_alignParentLeft="true">
+        <ImageView android:id="@+id/iv_title_bar_left" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cube_mints_icon_top_back" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/ly_title_bar_center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="17sp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ly_title_bar_right" android:paddingRight="12dp" android:layout_width="100dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <in.srain.cube.views.MoreActionView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:more_action_dot_radius="3dp" app:more_action_dot_span="3dp"/>
+    </RelativeLayout>
+</RelativeLayout>

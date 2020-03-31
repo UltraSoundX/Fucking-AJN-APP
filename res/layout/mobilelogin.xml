@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topnav"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <com.e23.ajn.bbs.LineEditText android:textSize="20sp" android:textColor="#808080" android:id="@+id/mobileno" android:background="@null" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="手机号" android:drawableLeft="@mipmap/shoujileft" android:drawablePadding="5dp" android:inputType="number" style="?android:attr/textViewStyle"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <com.e23.ajn.bbs.LineEditText android:textSize="20sp" android:textColor="#808080" android:id="@+id/yanzhengma" android:background="@null" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="验证码" android:drawableLeft="@mipmap/yzmleft" android:drawablePadding="5dp" android:layout_alignParentLeft="true" android:inputType="number" style="?android:attr/textViewStyle"/>
+            <Button android:textSize="18sp" android:textColor="#2f8aff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/postyzm" android:background="#d6e8ff" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取验证码" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Button android:textSize="20sp" android:textColor="#2d8bff" android:layout_gravity="center_horizontal" android:id="@+id/dologin" android:background="@drawable/buttonstyle" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="登　陆"/>
+    </LinearLayout>
+</LinearLayout>

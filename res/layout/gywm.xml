@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topblank" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <RelativeLayout android:id="@+id/top_nav" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/backbotton" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:src="@mipmap/back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="22sp" android:textColor="@color/white" android:id="@+id/topbartxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gywm" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@mipmap/fenxiangimg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/textsizeset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@mipmap/textsizeset" android:layout_toLeftOf="@+id/share" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <com.tencent.smtt.sdk.WebView android:id="@+id/webview" android:background="@color/color_sspbg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <RelativeLayout android:id="@+id/errorlayout" android:background="@color/color_indexbottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/errorimg" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</LinearLayout>

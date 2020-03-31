@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/tab_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <RelativeLayout android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/tabs_rg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+            <RadioButton android:id="@+id/tab_rb_home" android:checked="true" android:text="@string/tab_home" android:drawableTop="@drawable/rb_selector_home" style="@style/tab_rb_style"/>
+            <RadioButton android:id="@+id/tab_rb_db" android:text="@string/tab_db" android:drawableTop="@drawable/rb_selector_db" style="@style/tab_rb_style"/>
+            <RadioButton android:id="@+id/tab_rb_square" android:text="@string/tab_square" android:drawableTop="@drawable/rb_selector_square" style="@style/tab_rb_style"/>
+            <RadioButton android:id="@+id/tab_rb_pc" android:text="@string/tab_pc" android:drawableTop="@drawable/rb_selector_pc" style="@style/tab_rb_style"/>
+        </RadioGroup>
+        <ImageView android:id="@+id/redpoint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@mipmap/redpoint" android:layout_toLeftOf="@+id/sixinarrow" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</LinearLayout>

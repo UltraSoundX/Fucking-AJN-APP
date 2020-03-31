@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        <FrameLayout android:id="@+id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="start" android:orientation="vertical" android:id="@+id/left_drawer" android:background="@mipmap/mainslidebg" android:layout_width="200dp" android:layout_height="match_parent" android:divider="@android:color/transparent" android:choiceMode="singleChoice">
+        <ScrollView android:gravity="center_horizontal" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioGroup android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/tabs_rg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/tab_rb_home" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" android:checked="true" android:text="@string/tab_home" android:drawableRight="@mipmap/rb_select_arrow" style="@style/tab_rb_style"/>
+                <RadioButton android:id="@+id/tab_rb_mall" android:layout_marginBottom="10dp" android:text="@string/tab_rb_mall" android:drawableRight="@mipmap/rb_select_arrow_trans" style="@style/tab_rb_style"/>
+                <RadioButton android:id="@+id/tab_rb_jiaofei" android:layout_marginBottom="10dp" android:text="@string/tab_jiaofei" android:drawableRight="@mipmap/rb_select_arrow_trans" style="@style/tab_rb_style"/>
+                <RadioButton android:id="@+id/tab_rb_fuwu" android:layout_marginBottom="10dp" android:text="@string/tab_fuwu" android:drawableRight="@mipmap/rb_select_arrow_trans" style="@style/tab_rb_style"/>
+                <RadioButton android:id="@+id/tab_rb_jnrb" android:layout_marginBottom="10dp" android:text="@string/tab_rb_jnrb" android:drawableRight="@mipmap/rb_select_arrow_trans" style="@style/tab_rb_style"/>
+                <RadioButton android:id="@+id/tab_rb_jnsb" android:layout_marginBottom="10dp" android:text="@string/tab_rb_jnsb" android:drawableRight="@mipmap/rb_select_arrow_trans" style="@style/tab_rb_style"/>
+                <RadioButton android:id="@+id/tab_rb_dsnb" android:layout_marginBottom="10dp" android:text="@string/tab_rb_dsnb" android:drawableRight="@mipmap/rb_select_arrow_trans" style="@style/tab_rb_style"/>
+            </RadioGroup>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="end" android:orientation="vertical" android:id="@+id/right_drawer" android:background="@mipmap/mainslidebg" android:layout_width="200dp" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <ScrollView android:gravity="center_horizontal" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/headlayout" android:background="#7f3d544a" android:paddingBottom="10dp" android:layout_width="180dp" android:layout_height="200dp" android:layout_centerHorizontal="true">
+                    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                        <com.e23.ajn.views.CircularImage android:id="@+id/cover_user_photo" android:layout_width="82dp" android:layout_height="82dp" android:src="@mipmap/mainrightunloginhead" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="20sp" android:textColor="#a7b2b8" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlogined"/>
+                    <TextView android:textSize="14sp" android:textColor="#a7b2b8" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tishistr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logintishi"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/logintop" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+                        <ImageView android:id="@+id/shoujihao" android:layout_width="75dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@mipmap/shoujihao" android:scaleType="fitXY" android:contentDescription="@null"/>
+                        <ImageView android:id="@+id/weixin" android:layout_width="75dp" android:layout_height="30dp" android:src="@mipmap/weixin" android:scaleType="fitXY" android:contentDescription="@null"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/loginbottom" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/sinaweibo" android:layout_width="75dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@mipmap/sinaweibo" android:scaleType="fitXY" android:contentDescription="@null"/>
+                        <ImageView android:id="@+id/qqzhanghao" android:layout_width="75dp" android:layout_height="30dp" android:src="@mipmap/qqzhanghao" android:scaleType="fitXY" android:contentDescription="@null"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/pccenter" android:background="@drawable/mainrighttxtbg" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:clickable="true" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/tab_pc" android:layout_below="@+id/headlayout" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/mycoll" android:background="@drawable/mainrighttxtbg" android:paddingTop="8dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/mycell" android:layout_below="@+id/pccenter" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/newsserch" android:background="@drawable/mainrighttxtbg" android:paddingTop="8dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/newssearch" android:layout_below="@+id/mycoll" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/appset" android:background="@drawable/mainrighttxtbg" android:paddingTop="8dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/set" android:layout_below="@+id/newsserch" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ImageView android:id="@+id/indicat" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/indicatorone" android:scaleType="centerCrop" android:contentDescription="@null"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topblank" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <RelativeLayout android:id="@+id/top_nav" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:gravity="center_vertical" android:id="@+id/backbtn" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:src="@mipmap/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/usercenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@mipmap/usheader_top" android:layout_width="match_parent" android:layout_height="180dp">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.e23.ajn.views.CircularImage android:id="@+id/headimg" android:layout_width="80dp" android:layout_height="80dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/uname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:scaleType="centerInside" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp" android:baselineAligned="true">
+        <RelativeLayout android:id="@+id/sexlayout" android:background="@drawable/pctoptxt" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@mipmap/sex_female" android:drawablePadding="1dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#d2d2d2" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/arealayout" android:background="@drawable/pctoptxt" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@mipmap/position" android:drawablePadding="1dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#d2d2d2" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sixin" android:background="@drawable/pctoptxt" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/sixintxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sixin" android:drawableLeft="@mipmap/grzx_sixin" android:drawablePadding="2dp"/>
+            <TextView android:textSize="18sp" android:gravity="center_vertical" android:id="@+id/sixinrp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#d2d2d2" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/friends" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/friendstv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/myfriends" android:drawableLeft="@mipmap/myzhutie" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+            <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/zhuite" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/zhutietxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mytiezi" android:drawableLeft="@mipmap/myzhutie" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+            <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/huitie" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/huitietxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/myhuifu" android:drawableLeft="@mipmap/myhuitie" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+            <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/pltome" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/pltometxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pltome" android:drawableLeft="@mipmap/pltome" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:id="@+id/pltomerp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/pltometxt" android:layout_centerVertical="true"/>
+                <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+            <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/dingdan" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/dingdantxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dingdantxt" android:drawableLeft="@mipmap/mydingdan" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:gravity="center_vertical" android:id="@+id/dingdanarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                <ImageView android:id="@+id/hasneworder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@mipmap/redpoint" android:layout_toLeftOf="@+id/dingdanarrow" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+            <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/integral" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/integraltxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/integraltxt" android:drawableLeft="@mipmap/icon_integral" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:gravity="center_vertical" android:id="@+id/integral_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                <TextView android:textSize="14sp" android:textColor="#ff3a5c" android:id="@+id/integral_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

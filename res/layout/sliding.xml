@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/qidong_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/sliding_default_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/slide_bg" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:contentDescription="@null"/>
+    <ImageView android:id="@+id/advimg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_above="@+id/sliding_default_img" android:contentDescription="@null"/>
+    <ImageView android:id="@+id/jumpbtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:src="@mipmap/clock1" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+</RelativeLayout>

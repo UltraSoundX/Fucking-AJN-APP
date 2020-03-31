@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topnav"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="180dp">
+        <com.e23.ajn.views.CircularImage android:id="@+id/userheadthumb" android:layout_width="90dp" android:layout_height="90dp" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <TextView android:textSize="24sp" android:textColor="@color/white" android:id="@+id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <View android:background="@color/myfragment_blank" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/yqmlayout" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yqm" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/yzmjf" android:gravity="center_vertical" android:id="@+id/yqmtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@mipmap/pcjiantou" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <View android:id="@+id/yqmjfblank" android:background="#e7e7e7" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/jflayout" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jifen" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/yzmjf" android:gravity="center_vertical" android:id="@+id/jftv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@mipmap/pcjiantou" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <View android:background="@color/myfragment_blank" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/sixinlayout" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sixintome" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <View android:background="@color/myfragment_blank" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/add_friend_layout" android:background="@drawable/pcselector" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/add_friend_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_friend" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <View android:background="@color/myfragment_blank" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

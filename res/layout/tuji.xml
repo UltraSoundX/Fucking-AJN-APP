@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bottomnav" android:background="@color/black" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageView android:gravity="center_vertical" android:id="@+id/writepl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@mipmap/writepln" android:contentDescription="@null"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/commentsum" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/plimg" android:background="@mipmap/plimgn" android:paddingLeft="2dp" android:paddingTop="4dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView android:gravity="center" android:id="@+id/shareimg" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@mipmap/shareimg" android:layout_weight="1" android:contentDescription="@null"/>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:gravity="center" android:id="@+id/dingimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/dingimg2" android:contentDescription="@null"/>
+            <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_ding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:gravity="center" android:id="@+id/caiimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/caiimg2" android:contentDescription="@null"/>
+            <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_cai" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jiayi"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="5dp" android:layout_above="@+id/bottomnav" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="5dp" android:layout_above="@+id/desc" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/indicate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignBaseline="@+id/title" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/backbtn" android:background="@color/black" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:src="@mipmap/back" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null"/>
+</RelativeLayout>

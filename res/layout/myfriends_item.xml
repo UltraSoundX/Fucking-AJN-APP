@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.e23.ajn.views.CircularImage android:id="@+id/userheadthumb" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:contentDescription="@null"/>
+    <TextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/userheadthumb" android:layout_centerVertical="true"/>
+    <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    <View android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/userheadthumb"/>
+</RelativeLayout>

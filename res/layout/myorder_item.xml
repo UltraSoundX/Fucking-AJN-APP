@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/list_item_bg" android:padding="5dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/newsimg" android:visibility="visible" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginRight="5dp" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <RelativeLayout android:layout_gravity="top" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="#054578" android:ellipsize="end" android:gravity="left" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="16sp" android:textColor="#666" android:id="@+id/goodsstatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/title" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:textColor="#666" android:id="@+id/dingdanhao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/goodsstatus" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:textColor="#666" android:id="@+id/buytime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/dingdanhao" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+</LinearLayout>

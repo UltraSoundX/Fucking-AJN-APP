@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.youth.banner.Banner android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <GridView android:id="@+id/hygv" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchMode="columnWidth" android:numColumns="3"/>
+    <RelativeLayout android:id="@+id/morecatlayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/morecat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36dp" android:src="@mipmap/shequmore" android:adjustViewBounds="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

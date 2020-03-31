@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/fx_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="22sp" android:textColor="@color/fx_txtcolor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/fx_fxd"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/top_nav" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+            <RelativeLayout android:gravity="center" android:id="@+id/sinaweibolayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/sinamimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sharesinaweibo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+                <TextView android:textSize="14sp" android:textColor="@color/fx_txtcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fx_sinaweibo" android:layout_below="@+id/sinamimg" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/txweibolayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/txweibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/txweibo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+                <TextView android:textSize="14sp" android:textColor="@color/fx_txtcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fx_qqweibo" android:layout_below="@+id/txweibo" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/weixinlayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/shareweixin" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+                <TextView android:textSize="14sp" android:textColor="@color/fx_txtcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fx_weixinfriend" android:layout_below="@+id/weixin" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/wxpyqlayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/wxpyq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wxpyq" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+                <TextView android:textSize="14sp" android:textColor="@color/fx_txtcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fx_weixinpyq" android:layout_below="@+id/wxpyq" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/color_blue_36A1D9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="10dp"/>
+        <TextView android:textSize="22sp" android:textColor="@color/color_blue_36A1D9" android:gravity="center" android:id="@+id/fxcancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/fx_cancel"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/list_item_bg" android:padding="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/newsimg" android:visibility="visible" android:layout_width="85dp" android:layout_height="60dp" android:layout_marginRight="8dp" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="#054578" android:gravity="left" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/bottomlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/title">
+                <TextView android:textSize="12sp" android:textColor="#666" android:id="@+id/newsclass" android:paddingRight="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="14sp" android:textColor="#666" android:gravity="center" android:id="@+id/showtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@mipmap/time_icon" android:drawablePadding="3dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topnav"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_tab" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.e23.ajn.views.SyncHorizontalScrollView android:id="@+id/mHsv" android:background="#f2f2f2" android:scrollbars="none" android:fadingEdge="none" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_nav" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rg_nav_content" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="38dp" android:layout_alignParentTop="true"/>
+                <ImageView android:id="@+id/iv_nav_indicator" android:background="#5ab0eb" android:visibility="gone" android:layout_width="1dp" android:layout_height="5dp" android:scaleType="matrix" android:layout_alignParentBottom="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+        </com.e23.ajn.views.SyncHorizontalScrollView>
+        <ImageView android:id="@+id/iv_nav_left" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/iv_navagation_scroll_left" android:contentDescription="@null"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="40dp" android:src="@mipmap/columleft" android:contentDescription="@null"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_nav_right" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="30dp" android:layout_height="40dp" android:src="@mipmap/iv_navagation_scroll_right" android:contentDescription="@null"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/refreshing" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/lvlayout" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.e23.ajn.views.ParentViewpager android:layout_gravity="center" android:id="@+id/mViewPager" android:background="#ffffff" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="wrap_content" android:flipInterval="30" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/errorlayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/errorimg" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</LinearLayout>

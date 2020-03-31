@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.nereo.multi_image_selector.view.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#343535" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="#cdcece" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mis_tip_take_photo" android:drawableTop="@drawable/mis_asy" android:drawablePadding="10dp"/>
+</me.nereo.multi_image_selector.view.SquareFrameLayout>

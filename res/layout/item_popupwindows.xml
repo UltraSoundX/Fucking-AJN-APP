@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_popup" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:background="#3b89ed" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="55dp">
+            <Button android:textSize="18sp" android:textColor="#3b89ed" android:id="@+id/item_popupwindows_camera" android:background="@drawable/bt_nobgd" android:layout_width="match_parent" android:layout_height="55dp" android:text="拍照"/>
+        </LinearLayout>
+        <TextView android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="80dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="55dp">
+            <Button android:textSize="18sp" android:textColor="#3b89ed" android:id="@+id/item_popupwindows_Photo" android:background="@drawable/bt_nobgd" android:layout_width="match_parent" android:layout_height="55dp" android:text="从相册中选取"/>
+        </LinearLayout>
+        <TextView android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <Button android:textSize="18sp" android:textColor="#585858" android:id="@+id/item_popupwindows_cancel" android:background="@drawable/bt_nobgd" android:layout_width="match_parent" android:layout_height="55dp" android:text="取消"/>
+    </LinearLayout>
+</LinearLayout>

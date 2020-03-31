@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/tv_sendtime" android:background="#bfbfbf" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+        <ImageView android:id="@+id/iv_userhead" android:focusable="false" android:layout_width="52dp" android:layout_height="52dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+        <TextView android:textSize="15sp" android:textColor="#ff000000" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_chatcontent" android:background="@drawable/chatto_bg" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:minHeight="50dp" android:layout_toLeftOf="@+id/iv_userhead" android:lineSpacingExtra="2dp"/>
+        <TextView android:textSize="15sp" android:textColor="#ff000000" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_time" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:minHeight="50dp" android:layout_toLeftOf="@+id/tv_chatcontent" android:lineSpacingExtra="2dp"/>
+        <TextView android:textSize="15sp" android:textColor="#818181" android:gravity="center" android:id="@+id/tv_username" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_chatcontent" android:layout_below="@+id/iv_userhead" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

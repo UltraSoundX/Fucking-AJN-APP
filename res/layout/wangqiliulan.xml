@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topnav"/>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <Spinner android:id="@+id/yspinner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Spinner android:id="@+id/mspinner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/jiansuo" android:background="@drawable/loginbtnbg" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:minWidth="60dp" android:text="@string/jiansuo"/>
+    </LinearLayout>
+    <View android:background="@color/color_blue_36A1D9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="10dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TableLayout android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp">
+            <TableRow>
+                <TextView android:textColor="@color/canlendar_text_color" android:text="@string/sunday" style="@style/dateStyle"/>
+                <TextView android:textColor="@color/canlendar_text_color" android:text="@string/monday" style="@style/dateStyle"/>
+                <TextView android:textColor="@color/canlendar_text_color" android:text="@string/thesday" style="@style/dateStyle"/>
+                <TextView android:textColor="@color/canlendar_text_color" android:text="@string/wednesday" style="@style/dateStyle"/>
+                <TextView android:textColor="@color/canlendar_text_color" android:text="@string/thursday" style="@style/dateStyle"/>
+                <TextView android:textColor="@color/canlendar_text_color" android:text="@string/friday" style="@style/dateStyle"/>
+                <TextView android:textColor="@color/canlendar_text_color" android:text="@string/saturday" style="@style/dateStyle"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/showview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="15dp" android:layout_weight="1"/>
+</LinearLayout>

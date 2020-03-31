@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topnav"/>
+    <RelativeLayout android:id="@+id/headlayout" android:background="@drawable/pcselector" android:padding="20dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/headimg" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:gravity="center_vertical" android:id="@+id/headarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <com.e23.ajn.views.CircularImage android:id="@+id/userheadthumb" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginRight="10dp" android:scaleType="fitXY" android:layout_toLeftOf="@+id/headarrow" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/usernamelayout" android:background="@drawable/pcselector" android:padding="20dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nicheng" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:gravity="center_vertical" android:id="@+id/nichengarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/unametv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/nichengarrow"/>
+    </RelativeLayout>
+    <View android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/sexlayout" android:background="@drawable/pcselector" android:padding="20dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xingbie" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:gravity="center_vertical" android:id="@+id/sixinarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pcjiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="20sp" android:textColor="#272727" android:gravity="center_vertical" android:id="@+id/sextv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/sixinarrow"/>
+    </RelativeLayout>
+</LinearLayout>

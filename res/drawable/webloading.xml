@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:variablePadding="true" android:oneshot="false">
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_1" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_2" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_3" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_4" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_5" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_6" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_7" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_8" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_9" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_10" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_11" android:clipOrientation="vertical"/>
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="fill_vertical" android:drawable="@mipmap/webloading_12" android:clipOrientation="vertical"/>
+    </item>
+</animation-list>

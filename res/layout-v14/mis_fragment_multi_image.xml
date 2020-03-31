@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:id="@+id/grid" android:paddingBottom="?android:attr/actionBarSize" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="@dimen/mis_space_size" android:verticalSpacing="@dimen/mis_space_size" android:columnWidth="@dimen/mis_image_size" android:numColumns="auto_fit"/>
+    <RelativeLayout android:id="@+id/footer" android:background="#cc000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_alignParentBottom="true">
+        <Button android:textSize="16sp" android:textColor="@color/mis_folder_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/category_btn" android:background="@null" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:drawableRight="@drawable/mis_text_indicator" android:drawablePadding="5dp" android:layout_centerVertical="true" android:textAllCaps="false"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/jinanhao_item_img" android:visibility="visible" android:layout_width="85dp" android:layout_height="60dp" android:layout_marginRight="8dp" android:src="@mipmap/newsloadingpic" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/jinanhao_item_dingyue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/jinanhao_item_dingyue" android:layout_toRightOf="@+id/jinanhao_item_img">
+            <TextView android:textSize="18sp" android:textColor="#054578" android:ellipsize="end" android:gravity="left" android:id="@+id/jinanhao_item_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="16sp" android:textColor="#666" android:ellipsize="end" android:id="@+id/jinanhao_item_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topnav"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="18sp" android:textColor="@color/color_gray_45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/pushstr" android:layout_alignParentLeft="true"/>
+        <ToggleButton android:id="@+id/pushswitch" android:background="@drawable/toggleselector" android:layout_width="50dp" android:layout_height="26dp" android:layout_marginRight="5dp" android:checked="true" android:textOn="@null" android:textOff="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/clearcache" android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="18sp" android:textColor="@color/color_gray_45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/clearcache" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_indexbottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <View android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/banbenlayout" android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="18sp" android:textColor="@color/color_gray_45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/vercheck" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_gray_45" android:id="@+id/vercheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/yijianfankui" android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="18sp" android:textColor="@color/color_gray_45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/yjfk" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/ganyuwomen" android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="18sp" android:textColor="@color/color_gray_45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/gywm" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/logout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:background="@drawable/button_corner" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="退 出 登 录" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

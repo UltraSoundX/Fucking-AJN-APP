@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="48dp">
+    <ImageView android:id="@+id/left_imbt" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="2dp" android:src="@mipmap/ic_drawer" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    <TextView android:textSize="24sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/ajnlogo" android:layout_width="wrap_content" android:layout_height="26dp" android:src="@mipmap/ajnlogo" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rbtnlay" android:layout_width="46dp" android:layout_height="36dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.e23.ajn.views.CircularImage android:id="@+id/right_imbt" android:background="@mipmap/topnav_bg" android:layout_width="30dp" android:layout_height="30dp" android:src="@mipmap/menu_right_nav_btn" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

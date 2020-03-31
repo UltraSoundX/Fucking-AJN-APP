@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/list_item_bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/userhead" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitXY" android:contentDescription="@null"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="48dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/mysixinitemuname" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/uname" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/mysixinitemudatetime" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/datetime" android:layout_width="wrap_content" android:layout_height="24dp" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/mysixinitemudatetime" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:drawableLeft="@mipmap/redpoint" android:drawablePadding="2dp" android:layout_below="@+id/uname" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/mysixinitemline" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

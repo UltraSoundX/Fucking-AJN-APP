@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_indexbottom_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topblank" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_layout" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:id="@+id/backbutton" android:layout_width="36dp" android:layout_height="wrap_content" android:src="@mipmap/back" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/uname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout android:id="@+id/load_more_list_view_ptr_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+            <in.srain.cube.views.loadmore.LoadMoreListViewContainer android:id="@+id/load_more_list_view_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/load_more_small_image_list_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null"/>
+            </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_bottom" android:background="@color/white" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_send" android:background="@drawable/chat_send_btn" android:layout_width="60dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:text="@string/sixin_send" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="18sp" android:id="@+id/et_sendmessage" android:background="@drawable/login_edit_normal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/btn_send" android:layout_centerVertical="true" android:inputType="text"/>
+    </RelativeLayout>
+</LinearLayout>

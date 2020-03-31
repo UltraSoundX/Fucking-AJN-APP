@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/pcnormal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topnav"/>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <EditText android:textSize="22sp" android:textColor="#004276" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/searchet" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@mipmap/ee" android:inputType="text"/>
+            <ImageView android:id="@+id/clearbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ff" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        </RelativeLayout>
+        <TextView android:textSize="22sp" android:textColor="#2e8eff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/dosearch" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sousuo"/>
+    </LinearLayout>
+    <View android:background="@color/color_gray_ec" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="20sp" android:textColor="#464646" android:gravity="left" android:id="@+id/rmzx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/hotnews" android:drawableLeft="@mipmap/plleft" android:drawablePadding="3dp"/>
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout android:id="@+id/load_more_list_view_ptr_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <in.srain.cube.views.loadmore.LoadMoreListViewContainer android:id="@+id/load_more_list_view_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/load_more_small_image_list_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null"/>
+        </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

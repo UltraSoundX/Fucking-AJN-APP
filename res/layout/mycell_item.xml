@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.e23.ajn.swipe.SwipeLayout android:id="@+id/swipe" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@+id/ll_menu" android:background="#ff3b2f" android:layout_width="100dp" android:layout_height="match_parent">
+            <ImageView android:id="@+id/trash" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/trash" android:contentDescription="@null"/>
+            <TextView android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/position" android:background="@drawable/list_item_bg" android:padding="8dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/newsimg" android:visibility="visible" android:layout_width="85dp" android:layout_height="60dp" android:layout_marginRight="8dp" android:scaleType="fitXY" android:contentDescription="@null"/>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="18sp" android:textColor="#054578" android:gravity="left" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/bottomlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/title">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <TextView android:textSize="14sp" android:textColor="#666" android:gravity="right" android:id="@+id/processtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@mipmap/time_icon" android:drawablePadding="3dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.e23.ajn.swipe.SwipeLayout>
+    <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+</LinearLayout>

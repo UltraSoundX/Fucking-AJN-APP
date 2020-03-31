@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:background="@color/subscribe_activity_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top_nav" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/backbtn" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="频道管理" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/displayeditcolumn" android:layout_width="30dp" android:layout_height="40dp" android:layout_marginRight="5dp" android:src="@mipmap/editcloumok" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_nav">
+        <LinearLayout android:orientation="vertical" android:id="@+id/subscribe_main_layout" android:background="@color/subscribe_bg" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="14dp">
+                <TextView android:id="@+id/my_category_text" android:text="我的频道" style="@style/subscribe_my_tip_text"/>
+                <TextView android:textSize="11sp" android:textColor="@color/subscribe_tip_text" android:id="@+id/my_category_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="单击增删频道，长按拖拽排序"/>
+            </LinearLayout>
+            <View android:id="@+id/seperate_line" style="@style/subscribe_seperate_line"/>
+            <com.e23.ajn.column.DragGrid android:gravity="center" android:id="@+id/userGridView" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:listSelector="@android:color/transparent" android:horizontalSpacing="14dp" android:verticalSpacing="14px" android:stretchMode="columnWidth" android:numColumns="4"/>
+            <View android:id="@+id/seperate_line2" style="@style/subscribe_seperate_line"/>
+            <TextView android:id="@+id/more_category_text" android:layout_marginLeft="10dp" android:layout_marginBottom="14dp" android:text="更多频道" style="@style/subscribe_more_tip_text"/>
+            <com.e23.ajn.column.OtherGridView android:gravity="center" android:id="@+id/otherGridView" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:listSelector="@android:color/transparent" android:horizontalSpacing="14dp" android:verticalSpacing="14px" android:stretchMode="columnWidth" android:numColumns="4"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/category_layout" android:visibility="gone" layout="@layout/channel_item"/>
+</RelativeLayout>

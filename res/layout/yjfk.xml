@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topblank" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <RelativeLayout android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/backbutton" android:layout_width="36dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:src="@mipmap/back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="22sp" android:textColor="@color/white" android:id="@+id/appset" android:background="@null" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户反馈" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/msg_send" android:background="@null" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="提交" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+        <EditText android:textSize="16sp" android:textColor="@color/black" android:id="@+id/lianxifangshi" android:background="#000000ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:layout_marginBottom="10dp" android:hint="联系方式" android:maxLength="30" android:textCursorDrawable="@null"/>
+        <View android:background="@mipmap/divider_horizontal_common" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <EditText android:textSize="16sp" android:textColor="@color/black" android:gravity="top" android:id="@+id/fkcontent" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:hint="内容" android:textCursorDrawable="@null"/>
+    </LinearLayout>
+</LinearLayout>

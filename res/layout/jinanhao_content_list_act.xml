@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topblank" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <RelativeLayout android:id="@+id/act_jianahao_content_list_top" android:background="@mipmap/topnav_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_below="@+id/topblank">
+        <ImageView android:id="@+id/act_jianahao_content_btn_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:src="@mipmap/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/act_jinanhao_content_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/act_jinanhao_content_tv_dingyue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/activity_jinanhao_content_list_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/act_jianahao_content_list_top"/>
+</RelativeLayout>
